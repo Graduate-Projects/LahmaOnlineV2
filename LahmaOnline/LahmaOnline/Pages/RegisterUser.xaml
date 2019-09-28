@@ -106,9 +106,9 @@
                         <Frame IsClippedToBounds="True"  x:Name="fraNationality" BorderColor="#707070" HasShadow="False" Style="{x:Static Style:GeneralStyles.FrameRaduis5Padding2_Style}" >
                             <Grid>
                                 <Picker Title="{x:Static XResource:MLResource.SelectNationality}" 
-                                    ItemDisplayBinding="{Binding Name}"
                                     ItemsSource="{Binding RegisterUserProperty.Nationality}"
-                                    SelectedIndexChanged="StoreNationality"/>
+                                    SelectedIndexChanged="StoreNationality"
+                                    ItemDisplayBinding="{Binding Name}"/>
                                 <FFImage:SvgCachedImage IsVisible="False" x:Name="WRnationality" Source="warning.svg" Style="{x:Static Style:GeneralStyles.FFImage15X15Style}" HorizontalOptions="End" VerticalOptions="Center"/>
                             </Grid>
                         </Frame>
@@ -118,8 +118,8 @@
                             <Grid>
                                 <Picker Title="{x:Static XResource:MLResource.SelectGender}" 
                                     SelectedIndexChanged="StoreGender"
-                                    SelectedItem="{Binding RegisterUserProperty.GenderSelected}"
-                                    ItemsSource="{Binding RegisterUserProperty.GenderType}"/>
+                                    ItemsSource="{Binding RegisterUserProperty.GenderType}"
+                                    SelectedItem="{Binding RegisterUserProperty.GenderSelected}"/>
                                 <FFImage:SvgCachedImage IsVisible="False" x:Name="WRgender" Source="warning.svg" Style="{x:Static Style:GeneralStyles.FFImage15X15Style}" HorizontalOptions="End" VerticalOptions="Center"/>
                             </Grid>
                         </Frame>

@@ -128,9 +128,9 @@
                                             <Grid Margin="0" Padding="0" HorizontalOptions="FillAndExpand">
                                                 <Picker Title="{x:Static XResource:MLResource.SelectGender}"
                                                     Style="{x:Static Style:GeneralStyles.PickerFont10Margin4x2x2x2}"
-                                                    ItemDisplayBinding="{Binding .}"
+                                                    ItemsSource="{Binding ProfileProperty.GenderType}"
                                                     SelectedItem="{Binding ProfileProperty.GenderSelected, Mode=TwoWay}"
-                                                    ItemsSource="{Binding ProfileProperty.GenderType}"/>
+                                                    ItemDisplayBinding="{Binding .}"/>
                                                 <FFImage:SvgCachedImage IsVisible="False" x:Name="WRgender" 
                                                                 Source="warning.svg" 
                                                                 Style="{x:Static Style:GeneralStyles.FFImage15X15Style}" 
