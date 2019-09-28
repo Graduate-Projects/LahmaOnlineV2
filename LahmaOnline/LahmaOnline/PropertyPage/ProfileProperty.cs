@@ -83,7 +83,7 @@ namespace LahmaOnline.Property
             GetUserProfile();
             LanguageIndex = Convert.ToInt32(AppStatics.Language - 1);
             if(UserProfile.Gender >=1 & UserProfile.Gender <= 2)
-                GenderSelected = GenderType[UserProfile.Gender - 1];
+                GenderSelected = GenderType[UserProfile.Gender - 1]; // last
             AddressSelected = UserProfile.Address;
             Birthday = UserProfile.Bod ?? DateTime.Now;
         }
